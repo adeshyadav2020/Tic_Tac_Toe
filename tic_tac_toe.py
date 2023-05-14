@@ -74,5 +74,13 @@ while(Game == Running):
         CheckWin()  
         os.system('cls')    
         DrawBoard()    
+        if(Game==Draw):    
+    print("Game Draw")    
+elif(Game==Win):    
+    player-=1    
+    if(player%2!=0):    
+        print("Player 1 wins")    
+    else:    
+        print("Player 2 wins")  
     
     
