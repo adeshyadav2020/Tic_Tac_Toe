@@ -58,4 +58,19 @@ print()
 print()    
 print("Please Wait...")    
 time.sleep(3)    
+while(Game == Running):    
+    os.system('cls')    
+    DrawBoard()    
+    if(player % 2 != 0):    
+        print("Player 1's chance")    
+        Mark = 'X'    
+    else:    
+        print("Player 2's chance")    
+        Mark = 'O'    
+    choice = int(input("Enter the position between [1-9] where you want to mark : "))    
+    if(CheckPosition(choice)):    
+        board[choice] = Mark    
+        player+=1    
+        CheckWin()    
+    
     
