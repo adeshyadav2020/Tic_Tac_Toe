@@ -73,6 +73,6 @@ while(Game == Running):
         player+=1    
         CheckWin()  
         os.system('cls')    
-DrawBoard()    
+        DrawBoard()    
     
     
